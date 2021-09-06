@@ -1,0 +1,12 @@
+Primary domain
+myneighbourhooddentist.com
+
+
+cPanel login
+plwd2n9avp2j
+
+
+FTP
+
+username - myneighbourhood_dentist
+password - xjD]a%0fa@V

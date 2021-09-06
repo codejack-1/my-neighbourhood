@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>MyNeighbourhood</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+
+
+
+     <!-- font family -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&display=swap" rel="stylesheet">
+       <style>
+          html {
+            scroll-behavior: smooth;
+          } 
+       </style>
+</head>
+<body>
+  <app-root></app-root>
+
+  <!-- script -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+  <!-- navigation js -->
+
+  <script id="rendered-js">
+      $('.menu-toggle').click(function () {
+          $(".nav").toggleClass("mobile-nav");
+          $(this).toggleClass("is-active");
+      });
+
+      $(".nav-item").click(function (e) {
+          $(".nav").removeClass("mobile-nav");
+          $(".menu-toggle").removeClass("is-active");
+
+      });
+  </script>
+
+  <!-- navigation js -->
+
+
+  <script>
+      // scroll top 
+
+      var btn = $('#scrollTop');
+
+      $(window).scroll(function () {
+          if ($(window).scrollTop() > 300) {
+              btn.addClass('show');
+          } else {
+              btn.removeClass('show');
+          }
+      });
+
+      btn.on('click', function (e) {
+          e.preventDefault();
+          $('html, body').animate({
+              scrollTop: 0
+          }, '300');
+      });
+
+      //scroll top
+  </script>
+</body>
+</html>

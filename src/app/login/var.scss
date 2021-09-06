@@ -1,0 +1,93 @@
+/* --------background and text color-------- */
+$bg-primary:#204289;
+$bg-gray:#e7f0ff;
+$bg-color:#F5F9FF;
+
+/* ----------font size------------- */
+$fs-head:1rem;
+$fs-sub-head:0.875rem;
+$fs-number:1.5rem;
+$fs-age:0.75rem;
+$fs-login-head:1.375rem;
+$fs-login-sm-head:1.125rem;
+$fs-login-button:1.125remx;
+$text-center:center;
+$text-left:left;
+$text-right:right;
+$line-height:0.0625rem;
+$letter-space:0.3125rem;
+$text-decoration:none;
+
+/* font weight */
+
+$fw-regular:400;
+$fw-medium:500;
+$fw-semi-bold:600;
+$fw-bold:700;
+$fw-bolder:800;
+
+/* ------font family-------- */
+$btn-font-family:Cabin;
+$font-family:'Cabin', sans-serif;
+$text-black:black;
+$text-gray:#9ba7c1;
+$text-head:#204289;
+$text-purple:#5E5596;
+$text-dash1:#3A7E91;
+$text-dash2:#5E5596;
+$text-dash3:#9B705D;
+$text-dash4:#55A55E;
+$text-greem:#04C100;
+$text-close:#C8D1E3;
+$text-form:#777777;
+
+
+/*out line and radius */
+$btn-outline:0.125rem solid #204289;
+$btn-radius:0.3125rem;
+
+/* btn padding */
+
+$btn-padding: 10px 1rem;
+$btn-px:1.25rem;
+$btn-py:0.625rem;
+
+/* btn sm padding */
+
+$btn-sm-padding: 0.625rem 1.25rem 0.625rem 1.25rem;
+$btn-sm-px: 1.25rem;
+$btn-sm-py:0.625rem;
+
+/* login form padding */
+$pad-desk:0 3.125rem;
+$pad-tab:1.5625rem 1.25rem 5.1875rem 1.25rem ;
+$pad-mob:0 2.8125rem 5.1875rem 2.8125rem;
+
+/* dashboard padding */
+$dash-pad:0 2.68rem 0 2.5rem;
+$dash-appoint-pad:0 2.6875rem 0 1.875rem;
+$appoint-pad:1.375rem 0 1.6875rem 1.375rem;
+$card-text-pad:0.9375rem 2.1875rem;
+
+
+/* dashboard margin */
+$card-margin-top:0.9375rem 0 0 0;
+$card-margin:0.9375rem 0 0.9375rem 0;
+$crad-margin-bot:0.9375rem;
+
+
+
+/* display */
+
+$display-inline:display-inline;
+$display-block:display-block;
+$display-inline-block:display-inline-block;
+$display-none:display-none;
+
+
+/* log in page border radius */
+
+$login-border-radius: 1.25rem;
+$login-border-right:0 1.25rem 1.25rem 0;
+$login-border-left:1.25rem 0 0 1.25rem;
+
