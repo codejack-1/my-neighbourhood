@@ -4,9 +4,9 @@
     <i class='bx bx-menu text-dark text-muted' id="btn"></i>
   </div>
   <ul class="nav-list">
-    <li><a href="dashboard.html"><img src="assets/img/Union.svg" alt=""></a></li>
-    <li><a href="appointment.html"><img src="assets/img/Vector.svg" alt=""></a></li>
-    <li><a href="pateint.html"><img src="assets/img/Vector (1).svg" alt=""></a></li>
+    <li><a routerLink="/dashboard"><img src="assets/img/Union.svg" alt=""></a></li>
+    <li><a routerLink="/appointments"><img src="assets/img/Vector.svg" alt=""></a></li>
+    <li><a data-toggle="modal" href="#AddPatients" ><img src="assets/img/Vector (1).svg" alt=""></a></li>
     <li class="profile"> <img src="assets/img/icon.png" alt=""></li>
   </ul>
 </div>
@@ -47,14 +47,16 @@
           </div>
 
           <div class="Links-info">
-            <a class="nav-link ms-auto btn-add d-none d-md-block" href="#">Add patient</a>
+            <a class="nav-link ms-auto btn-add d-none d-md-block" data-toggle="modal" href="#AddPatients">Add patient</a>
             <a class="nav-link view d-none d-md-block" href="#">View All</a>
             <a href="#" class="nav-link view d-block d-md-none ms-auto">Hide</a>
           </div>
         </nav>
       </div>
     </div>
-  </section> <!-- dashboard sub-header -->
+  </section>
+  <!-- dashboard sub-header -->
+
   <!-- dashboard sub-header -->
   <section class="sect-pad">
     <div class="row dash-card">
@@ -436,3 +438,109 @@
   </section> <!-- appointments chart end-->
 
 </section>
+
+<!-- modal popup  -->
+
+<div class="modal fade show" id="AddPatients" aria-modal="true" role="dialog">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title head">Fill the patient detail</h4>
+        <button type="button" class="close" data-dismiss="modal">×</button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-12 col-lg-6">
+            <label for="inputEmail4" class="form-label form-txt">Patient Name</label>
+            <input type="text" class="form-control form-pad" aria-label="First name">
+          </div>
+          <div class="col-12 col-lg-6 mt-2 mt-lg-0">
+            <label for="inputEmail4" class="form-label form-txt">Mobile Number</label>
+            <input type="number" class="form-control form-pad" aria-label="Mobile Number">
+          </div>
+        </div>
+
+        <div class="row mt-3">
+          <div class="col-12 col-lg-2">
+            <label for="text" class="form-label form-txt">Age</label>
+            <input type="text" class="form-control form-pad" aria-label="DOB">
+          </div>
+          <div class="col-12 col-lg-2">
+            <label for="text" class="form-label form-txt">Gender</label>
+            <input type="text" class="form-control form-pad" placeholder="Male" aria-label="Gender">
+          </div>
+          <div class="col-12 col-lg-2">
+            <label for="text" class="form-label form-txt visibility-hidden">Gender</label>
+            <input type="text" class="form-control form-pad" placeholder="Female" aria-label="DOB">
+          </div>
+
+          <div class="col-12 col-lg-6">
+            <label for="Number" class="form-label form-txt">Select Date</label>
+            <input type="date" class="form-control form-pad text-form" aria-label="Date">
+          </div>
+        </div>
+
+        <div class="row mt-3">
+          <div class="col-lg-12">
+              <div class="TimeSlot">
+                  <h5 class="modal-title head-2">Preferred Time Slot</h5>
+              </div>
+          </div>
+        </div>
+
+        <div class="row mt-3">
+          <div class="col-4">
+              <button type="button" class="btn active btn-custom">
+                  <img src="assets/img/morning.png" alt="" class="image">
+                  <span>Morning</span>
+              </button>
+          </div>
+
+          <div class="col-4">
+              <button type="button" class="btn btn-custom">
+                  <img src="assets/img/afternoon.png" alt="" class="image">
+                  <span>Afternoon</span>
+              </button>
+          </div>
+
+          <div class="col-4">
+              <button type="button" class="btn btn-custom">
+                  <img src="assets/img/evening.png" alt="" class="image">
+                  <span>Evening</span>
+              </button>
+          </div>
+        </div>
+
+        <div class="row mt-3">
+          <div class="col-lg-12">
+              <ul class="ul-class">
+                  <li class="d-inline-block li-class"><button class="btn-time">09:30AM</button></li>
+                  <li class="d-inline-block li-class"><button class="btn-time">09:30AM</button></li>
+                  <li class="d-inline-block li-class"><button class="btn-time">09:30AM</button></li>
+                  <li class="d-inline-block li-class"><button class="btn-time">09:30AM</button></li>
+                  <li class="d-inline-block li-class"><button class="btn-time">09:30AM</button></li>
+
+                  <li class="d-inline-block li-class"><button class="btn-time">09:30AM</button></li>
+                  <li class="d-inline-block li-class"><button class="btn-time">09:30AM</button></li>
+                  <li class="d-inline-block li-class"><button class="btn-time">09:30AM</button></li>
+                  <li class="d-inline-block li-class"><button class="btn-time">09:30AM</button></li>
+                  <li class="d-inline-block li-class"><button class="btn-time">09:30AM</button></li>
+              </ul>
+          </div>
+        </div>
+
+        <!-- Modal footer -->
+        <div class="modal-footer border-0">
+          <button type="button" class="btn ml-auto button" data-dismiss="modal">BOOK APPOINTMENT</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+<!-- modal popup  -->

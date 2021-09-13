@@ -243,12 +243,6 @@
 }
 
 /*left  navigation */
-* {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
 
 .sidebar {
   position: fixed;
@@ -1463,3 +1457,104 @@ body {
 }
 
 /*# sourceMappingURL=style.css.map */
+
+
+/*Model popup css*/
+
+.modal {
+  z-index: 9999;
+}
+
+#AddPatients .modal-header {
+  padding: 10px 15px;
+}
+
+#AddPatients .modal-footer {
+  justify-content: flex-start;
+  padding: 10px 15px;
+}
+
+#AddPatients .button {
+  background-color: #204289;
+  font-size: 12px;
+  font-weight: bold;
+  color: white;
+  border-radius:30px;
+  padding: 10px 35px;
+  margin: 0;
+}
+
+#AddPatients .head {
+  font-size:22px;
+  color: #444444;
+}
+
+#AddPatients .form-txt{
+  font-size:14px;
+  color: #444444;
+}
+
+#AddPatients .head-2{
+  font-size:18px;
+  color: #444444;
+}
+
+#AddPatients .head-2b{
+  font-size:13px;
+  color: #7E848C;
+}
+
+
+#AddPatients .btn-custom {
+  padding: 10px 20px;
+  border: 1px solid #204289;
+  text-align: center;
+  display: flex;
+  width: 100%;
+  font-size: 12px;
+  min-width:75px;
+  font-weight: 500;
+  outline: 0 !important;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 90px;
+}
+
+#AddPatients .image{
+  height: 20px;
+  width: 24px;
+  object-fit: contain;
+  margin-right: 4px;
+}
+
+#AddPatients .btn-time{
+  background-color: white;
+  border-radius: 5px;
+  border: 1px solid #204289;
+  font-size: 12px;
+  padding: 8px;
+  font-weight: 500;
+  color: #204289;
+}
+
+#AddPatients .btn-time{
+  background-color: white;
+  color: #204289;
+  border: 1px solid #204289;
+  border-radius: 8px;
+  font-size: 12px;    
+  padding: 5px 15px;
+  margin-top: 6px;
+}
+
+#AddPatients .ul-class{
+  margin-left: -10px;
+  padding: 0;
+}
+
+#AddPatients .li-class{
+  margin: 0 0 3px 10px;
+}
+
+/*Model popup end css*/
